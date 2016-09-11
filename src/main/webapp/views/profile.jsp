@@ -15,6 +15,7 @@
     <%
         LoginBean bean = (LoginBean) session.getAttribute("bean");
     %>
+    <br>
 email: <%=bean.getEmail()%><br>
 password: <%=bean.getPass()%><br>
 </body>

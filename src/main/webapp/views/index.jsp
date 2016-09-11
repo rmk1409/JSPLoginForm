@@ -12,10 +12,10 @@
 </head>
 <body>
 <%
-    Boolean isSession = (Boolean) session.getAttribute("Session");
-    if (isSession != null && isSession) {
+    String isSession = (String) session.getAttribute("session");
+    if (isSession != null && "true".equals(isSession)) {
 %>
-<a href="controllers/logout.jsp">logout</a> |
+<a href="../controllers/logout.jsp">logout</a> |
 <a href="views/profile.jsp">profile</a>
 <%
 } else {
